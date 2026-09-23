@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu — Happy Birthday</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="backgroundMusic" loop playsinline preload="auto">
+        <source src="assets/backsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Putar backsound" aria-pressed="false">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span id="musicStatus">Play music</span>
+    </button>
+
+    <div class="intro-gate" id="introGate">
+        <div class="intro-gate-content">
+            <div class="intro-gate-heart">♡</div>
+            <p class="intro-gate-label">A little celebration for the person who means so much to me</p>
+            <h2>Untuk Kamu, yang selalu punya tempat spesial</h2>
+            <button id="introGateButton" type="button">
+                Buka <span>♡</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="floating-heart heart-1">♡</div>
+    <div class="floating-heart heart-2">♡</div>
+    <div class="floating-heart heart-3">♡</div>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">for you<span>.</span></div>
+            <a href="#story" class="nav-link">Our Story</a>
+        </nav>
+
+        <div class="hero-main">
+            <div class="hero-content">
+                <p class="eyebrow">A little celebration for someone special</p>
+
+                <h1>
+                    Happy Birthday,
+                    <span>My Favorite Person.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Hari ini adalah tentang kamu. Tentang bertambahnya satu tahun usia, tentang semua perjalanan yang sudah kamu lewati, dan tentang betapa bersyukurnya aku karena bisa mengenalmu. Semoga halaman kecil ini bisa menjadi salah satu hal sederhana yang membuat hari spesialmu terasa sedikit lebih istimewa.
+                </p>
+
+                <a href="#message" class="hero-button">
+                    Ada sesuatu untuk kamu
+                    <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-photo">
+                <img src="assets/foto1.jpeg" alt="Hero photo">
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>24 September 2026</span>
+            <span>♡</span>
+            <span>Made with love</span>
+        </div>
+    </header>
+
+    <section class="intro" id="story">
+        <div class="section-label">
+            <span>01</span>
+            <span>A little note</span>
+        </div>
+
+        <div class="intro-content">
+            <div class="intro-text">
+                <p class="big-text">Some people don't have to do much to make life feel a little more beautiful.
+                </p>
+
+                <p class="small-text">
+                    Dan menurutku, kamu adalah salah satu dari orang-orang itu. Kehadiranmu mungkin terasa sederhana, tapi entah bagaimana selalu berhasil membuat banyak hal terasa lebih berarti. Terima kasih sudah hadir, sudah menjadi dirimu sendiri, dan sudah menjadi bagian dari cerita yang begitu aku syukuri.
+                </p>
+            </div>
+
+            <div class="intro-photo">
+                <img src="assets/foto6.jpeg" alt="Our story photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-heading">
+            <div>
+                <p class="section-number">02 — Memories</p>
+                <h2>Little moments, <i>beautiful memories.</i></h2>
+            </div>
+
+            <p>
+                Mungkin bagi orang lain ini hanya sekumpulan foto. Tapi buatku, setiap foto menyimpan cerita, tawa, dan perasaan yang tidak selalu bisa dijelaskan dengan kata-kata.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <div class="photo photo-large">
+                <img src="assets/foto1.jpeg" alt="Memory 1">
+                <div class="photo-caption">
+                    <span>01</span>
+                    <span>One of the photos I want to cherish</span>
+                </div>
+            </div>
+
+            <div class="photo photo-wide">
+                <img src="assets/foto7.jpeg" alt="Memory 4">
+                <div class="photo-caption">
+                    <span>02</span>
+                    <span>when you've been working hard</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="assets/foto10.jpeg" alt="Memory 2">
+                <div class="photo-caption">
+                    <span>03</span>
+                    <span>One of those happy days</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="assets/foto8.jpeg" alt="Memory 3">
+                <div class="photo-caption">
+                    <span>04</span>
+                    <span>A memory I'll always keep</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="assets/foto5.jpeg" alt="Memory 5">
+                <div class="photo-caption">
+                    <span>05</span>
+                    <span>always beautiful and charming</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="assets/foto13.jpeg" alt="Memory 6">
+                <div class="photo-caption">
+                    <span>06</span>
+                    <span>A small part of your story</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section" id="message">
+        <div class="message-card">
+            <p class="section-number">03 — From me to you</p>
+
+            <h2>
+                For the person <i>who means the world to me.</i>
+            </h2>
+
+            <div class="message-wrap">
+                <div class="message-photo">
+                    <img src="assets/foto2.jpeg" alt="A photo of us">
+                </div>
+
+                <div class="message">
+                    <p>Selamat ulang tahun, sayang.</p>
+
+                    <p>
+                        SHari ini mungkin terlihat seperti hari biasa bagi sebagian orang, tapi buatku hari ini selalu terasa spesial karena di hari inilah seseorang yang begitu berarti untukku dilahirkan. Seseorang yang kehadirannya membawa banyak cerita, banyak tawa, dan banyak hal yang membuat hidup terasa lebih berwarna.
+                    </p>
+
+                    <p>
+                        Di usia yang baru ini, aku tidak berharap kamu harus menjadi seseorang yang sempurna. Aku hanya berharap kamu selalu punya alasan untuk tersenyum, punya keberanian untuk mengejar apa yang kamu inginkan, dan punya kekuatan untuk melewati setiap hal yang tidak mudah.
+
+                        Semoga langkahmu ke depan selalu dipertemukan dengan hal-hal baik. Semoga apa yang sedang kamu perjuangkan perlahan menemukan jalannya. Semoga kamu selalu diberikan kesehatan, kebahagiaan, ketenangan, dan keberkahan dalam setiap perjalananmu.
+
+                        Dan ketika suatu hari nanti kamu merasa semuanya terlalu berat, semoga kamu selalu ingat bahwa ada seseorang yang percaya bahwa kamu mampu melewati semuanya.
+                    </p>
+
+                    <p>
+                        Terima kasih sudah menjadi bagian dari hidupku. Terima kasih untuk setiap cerita, setiap tawa, setiap momen kecil, dan bahkan setiap hal sederhana yang mungkin tidak pernah kamu sadari ternyata begitu berarti untukku.
+
+                        Aku mungkin tidak selalu pandai mengungkapkan perasaan, tapi satu hal yang ingin kamu tahu: kehadiranmu sangat berarti.
+
+                        Semoga di usia yang baru ini, kamu menemukan lebih banyak hal yang membuatmu bahagia, lebih banyak alasan untuk bersyukur, dan lebih banyak cerita indah untuk kita kenang bersama.
+
+                        Happy birthday, kullll sayanggkuuu.
+                    </p>
+
+                    <p class="signature">
+                        With all my hear,<br>
+                        <span>Someone who will always be cheering for you ♡</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wishes">
+        <div class="wishes-title">
+            <p class="section-number">04 — My wishes</p>
+            <h2>A few things I <i>wish for you.</i></h2>
+        </div>
+
+        <div class="wishes-photo">
+            <img src="assets/foto3.jpeg" alt="Wishes photo">
+        </div>
+
+        <div class="wish-grid">
+            <div class="wish">
+                <span>01</span>
+                <h3>More happiness</h3>
+                <p>S\\Semoga kamu selalu menemukan kebahagiaan, bahkan dari hal-hal kecil yang sering kali tidak kita sadari.</p>
+            </div>
+
+            <div class="wish">
+                <span>02</span>
+                <h3>Bigger dreams</h3>
+                <p>Semoga kamu tidak pernah takut untuk bermimpi besar dan selalu punya keberanian untuk mengejarnya.</p>
+            </div>
+
+            <div class="wish">
+                <span>03</span>
+                <h3>Beautiful days</h3>
+                <p>Semoga hari-hari yang akan datang membawa lebih banyak cerita indah daripada hari-hari yang telah berlalu.</p>
+            </div>
+
+            <div class="wish">
+                <span>04</span>
+                <h3>Always loved</h3>
+                <p>Semoga kamu selalu dikelilingi oleh orang-orang yang tulus menyayangimu dan selalu mengingatkanmu betapa berharganya dirimu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="surprise">
+        <div class="surprise-content">
+            <p class="section-number">05 — One last thing</p>
+
+            <div class="surprise-photo">
+                <img src="assets/foto4.jpeg" alt="Surprise photo">
+            </div>
+
+            <h2>
+                I have a little <i>surprise</i> for you.
+            </h2>
+
+            <p>
+                Karena ucapan saja rasanya belum cukup untuk menggambarkan betapa spesialnya kamu. Jadi, aku menyimpan satu hal kecil di balik tombol ini.
+            </p>
+
+            <button id="surpriseButton">
+                Open your surprisee <span>♡</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with love, specially for you.</p>
+        <span>♡</span>
+        <p>2026</p>
+    </footer>
+
+    <div class="modal" id="surpriseModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Tutup">×</button>
+
+            <div class="modal-photo">
+                <img src="assets/foto11.jpeg" alt="A last photo">
+            </div>
+
+            <div class="modal-heart">♡</div>
+            <p class="modal-label">A little secret</p>
+
+            <h2>
+                YYou will always be<i>someone special to me.</i>
+            </h2>
+
+            <p>
+                Dari sekian banyak pertemuan dan kejadian yang terjadi dalam hidup, bertemu denganmu adalah salah satu hal yang paling aku syukuri dan paling membuat aku bangga memilikimu.
+            </p>
+
+            <p>
+                Terima kasih sudah menjadi bagian dari cerita ini. Semoga setelah hari ini masih ada banyak cerita, banyak tawa, dan banyak momen dan cerita yang bisa kita buat dan simpan. 
+                i love you, kulll sayanggkuuu. <span>♡</span>
+            </p>
+
+            <div class="modal-signature">Always rooting for you ♡</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
